@@ -3,6 +3,7 @@ layout: post
 title: 가상 메모리 영역
 categories: [memory]
 tags: [memory]
+comments: true
 ---
 > 이 페이지는 C언어를 기준으로 가상메모리 영역에 대해 설명하고 있다.
 
