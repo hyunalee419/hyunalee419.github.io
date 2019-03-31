@@ -1,5 +1,8 @@
 ---
+layout: post
 title: 가상 메모리 영역
+categories: [memory]
+tags: [memory]
 ---
 > 이 페이지는 C언어를 기준으로 가상메모리 영역에 대해 설명하고 있다.
 
@@ -22,11 +25,12 @@ title: 가상 메모리 영역
 -   코드 자체를 구성하는 메모리 영역으로 Hex 파일이나 BIN 파일 메모리다.
 -   프로그램 명령이 위치하는 곳으로 기계어로 제어되는 메모리 영역이다.
 
-```
+<pre>
+<code>
 int a; 를 선언 후 실행
 컴파일시 생성되는 기계어가 code 영역에 들어가는데, 위 예시에서는 "4byte 공간을 stack에 생성하라" 라는 명령이 code 영역에 들어간다.
-
-```
+</code>
+</pre>
 
 ## data 영역
 
@@ -52,7 +56,7 @@ int a; 를 선언 후 실행
 
 ## 메모리 할당 영역
 
-[##_Image|t/cfile@998707395C9C8BB734|alignCenter|width="500" height="664" style="width: 500px; height: 664px;"|_##]
+<img src="{{ "/assets/virtual-memory.png" | absolute_url }}" alt="drawing" style="width:500px;"/>
 
 code(text), data, stack 영역은 컴파일러가 알아서 메모리 영역을 결정한다. 즉, 컴파일할 때 data 영역과 stack 영역의 크기를 계산해서 필요한 메모리 공간을 가지게 된다. heap 영역은 개발자에 의해 프로그램 동작시 결정된다.
 
