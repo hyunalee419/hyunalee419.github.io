@@ -10,7 +10,7 @@ React에서 더보기 기능을 구현할 때 기존에 보여지고 있던 리�
 
 ## 예제
 
-{% highlight javascript linenos %}
+```javascript
 import React, { Component } from 'react';
 import Item from './components/Item';
 
@@ -51,7 +51,7 @@ class App extends Component {
 }
 
 export default App;
-{% endhighlight %}
+```
 
 `App.js`에서 버튼을 클릭하면 10개의 아이템을 추가해주는 코드가 있습니다.
 
@@ -59,7 +59,7 @@ export default App;
 
 ## Component with shouldComponentUpdate
 
-{% highlight javascript linenos %}
+```javascript
 import React from 'react';
 
 export default class Item extends React.Component {
@@ -75,7 +75,7 @@ export default class Item extends React.Component {
 		);
 	}
 }
-{% endhilight %}
+```
 
 `Component`로 구현할시에 성능을 잡는 가장 쉬운 방법은 `shouldComponentUpdate (이하, SCU)`를 사용하는 것입니다.
 SCU가 `return`하는 값에 따라 해당 컴포넌트의 리렌더링 여부가 결정됩니다.
@@ -85,7 +85,7 @@ SCU가 `return`하는 값에 따라 해당 컴포넌트의 리렌더링 여부�
 
 ## PureComponent
 
-{% highlight javascript linenos %}
+```javascript
 import React from 'react';
 
 export default class Item extends React.PureComponent {
@@ -97,13 +97,13 @@ export default class Item extends React.PureComponent {
 		);
 	}
 }
-{% endhighlight %}
+```
 
 `PureComponent`를 사용하면 `SCU`를 작성하지 않아도 됩니다. PureComponent가 `staet`, `props`가 변경됐을 경우만 rerender되도록 만들어진 컴포넌트이기 때문입니다. 그래서 `SCU`가 있는 `Component`와 마찬가지로 'render' 콘솔이 **10번씩** 찍힙니다.
 
 ## 함수형 컴포넌트
 
-{% highlight javascript linenos %}
+```javascript
 import React from 'react';
 
 const Item = ({ idx, name }) => {
@@ -116,7 +116,7 @@ const Item = ({ idx, name }) => {
 }
 
 export default Item;
-{% endhighlight %}
+```
 
 가장 간단하게 컴포넌트를 만드는 방법은 함수형 컴포넌트일 것이다. 하지만 함수형 컴포넌트는 **state**나 **라이프사이클 API**가 **전혀 사용되지 않을 때**, 또는 해당 컴포넌트는 자체 기능이 없고 **props가 들어가면 뷰가 나오는 경우**에만 사용됩니다.
 따라서 위 경우는 버튼 클릭시마다 'render'가 **리스트의 개수만큼** 출력된다.
