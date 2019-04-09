@@ -3,8 +3,9 @@
 // Nav menu
 
 @mixin icon-position($position) {
-	display: block;
+  display: block;
   position: fixed;
+  cursor: pointer;
   top: 35px;
   #{$position}: 25px;
   z-index: 10;

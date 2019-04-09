@@ -3,12 +3,12 @@ title: HYUNA LEE | Dev blog
 description: "This site is development knowledge blog by hyuna."
 url: "hyunalee419.github.io"
 author:
-  name: "Hyuna Lee"
+  name: "HYUNA LEE"
   email: "dlgusdk419@naver.com"
-  url: "http://www.jacoporabolini.com"
+  url: "https://hyunalee419.github.io/"
 
 # Build settings
-baseurl: "" # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
