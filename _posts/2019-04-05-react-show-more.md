@@ -127,6 +127,34 @@ export default Item;
 - ...
 이 된다.
 
+### [React.memo](https://ko.reactjs.org/docs/react-api.html#reactmemo)
+함수형 컴포넌트를 사용할 때도 렌더링 성능을 잡을 수 있다. 바로 `React.memo`를 사용하면 된다.
+공식 문서에서 설명하길 React.memo는 아래와 같다.
+
+> React.memo는 고차 컴포넌트(Higher Order Component)입니다. React.PureComponent와 비슷하지만 class가 아니라 함수 컴포넌트라는 점이 다릅니다.
+
+그렇다면 위 예제에서 적용은 어떻게 하면될까?
+아주 쉽다. 아래처럼 `export` 전에 `React.memo`만 작성해주면 끝난다.
+
+```javascript
+import React from 'react';
+
+const Item = ({ idx, name }) => {
+	console.log('render')
+	return (
+		<div>
+			<p>인덱스: {idx} / 이름: {name}</p>
+		</div>
+	);
+}
+
+export default React.memo(Item);
+```
+
+> **주의**
+>
+> React.memo는 오직 **성능 최적화**를 위해 사용되며, 두번째 파라미터로 `shouldComponentUpdate()`와 비슷한 함수를 전달할 수 있는데 이 함수는 `shouldComponentUpdate` 와 정반대의 동작이므로 주의해야 한다. 
+
 ---
 
 이제 각 컴포넌트의 특징을 알았으니 리스트 더보기 기능 구현시에는 **성능**을 꼭 잡아주세요!
