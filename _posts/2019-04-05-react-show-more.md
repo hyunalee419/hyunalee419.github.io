@@ -5,7 +5,7 @@ categories: [React]
 tags: [React, more]
 comments: true
 ---
-해당 페이지는 `Component', 'PureComponent`, `Functional Component`에 대해서 **rerender** 관련해서 정리하고 있습니다.
+해당 페이지는 `Component`, `PureComponent`, `Functional Component`에 대해서 **rerender** 관련해서 정리하고 있습니다.
 React에서 더보기 기능을 구현할 때 기존에 보여지고 있던 리스트는 다시 렌더링을 하면 안됩니다. 각 컴포넌트로 구현했을 시에 render 수가 어떻게 되는지 예제를 통해 이해해봅시다. 
 
 ## 예제
