@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Big-O, 시간 복잡도, 공간 
+title: Big-O, 시간 복잡도, 공간 복잡도
 categories: [Algorithm]
 tags: [Algorithm, big-O, Time-Complexity, Space-Complexity]
 comments: true
