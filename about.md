@@ -5,7 +5,7 @@ title: About
 ## Contact
 - Email: <a href="mailto:dlgusdk419@naver.com" target="_top">dlgusdk419@naver.com</a>
 - Website: 
-    - [https://hyunalee419.github.io](https://hyunalee419.github.io)
+    - [https://hyunalee.github.io](https://hyunalee.github.io)
     - [https://hyunalee.tistory.com](https://hyunalee.tistory.com)
 
 ## History
