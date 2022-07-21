@@ -1,4 +1,4 @@
 This repository is my blog.
 
-[hyunalee@githob.io](https://hyunalee419.github.io/)
+[hyunalee419@githob.io](https://hyunalee419.github.io/)
  
