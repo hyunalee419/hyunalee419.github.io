@@ -94,3 +94,4 @@ public class MemberServiceImpl impliments MemberService {
 ```
 
 > 의존관계 주입 방식에는 여러가지가 있는데 그 중 생성자 주입을 추천한다.
+> [의존관계 주입의 종류](https://hyunalee419.github.io/spring-dependency-injection)
